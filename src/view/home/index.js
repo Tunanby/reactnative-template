@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-14 17:06:18
  * @LastEditors: byz
- * @LastEditTime: 2022-08-17 21:37:54
+ * @LastEditTime: 2022-08-21 16:27:15
  */
 
 import React from 'react';
@@ -34,7 +34,7 @@ const HomeScreen = ({navigation}) => {
       {id: '0', title: '路由与页面跳转', routerName: 'Navigate', navigation},
       {id: '1', title: '事件', routerName: '', navigation},
       {id: '7', title: '更改导航栏操作', routerName: 'updateNav', navigation},
-      {id: '2', title: '状态管理', routerName: '', navigation},
+      {id: '2', title: '状态管理', routerName: 'store', navigation},
       {id: '3', title: '媒体：图片', routerName: '', navigation},
       {id: '10', title: '媒体：相机', routerName: '', navigation},
       {id: '11', title: '媒体：相册', routerName: '', navigation},

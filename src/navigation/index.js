@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-14 12:08:50
  * @LastEditors: byz
- * @LastEditTime: 2022-08-21 12:08:31
+ * @LastEditTime: 2022-08-21 16:27:08
  */
 
 // 安装完navigation 需要重启
@@ -16,6 +16,8 @@ import HomeScreen from '../view/home/index'; // 首页
 import NavigateScreen from '../view/navigation/navigate'; // 路由跳转
 import ParamsScreen from '../view/navigation/params'; // 路由传参
 import updateNavScreen from '../view/navigation/update'; // 动态修改导航栏信息
+// store
+import storeScreen from '../view/store/index'
 
 // 用户操作 事件 状态管理
 // 组件 媒体
@@ -34,6 +36,7 @@ function RouterView({}) {
         <Stack.Screen name="Navigate" component={NavigateScreen} />
         <Stack.Screen name="Params" component={ParamsScreen} />
         <Stack.Screen name="updateNav" component={updateNavScreen} />
+        <Stack.Screen name="store" component={storeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

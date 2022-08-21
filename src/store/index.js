@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-17 22:09:36
  * @LastEditors: byz
- * @LastEditTime: 2022-08-21 15:16:37
+ * @LastEditTime: 2022-08-21 16:51:20
  */
 
 // state
@@ -18,7 +18,10 @@
 // store就是把action与reducer联系到一起的对象。他维持应用state状态，他提供getState（）方法获取state，提供dispath（）方法发送action。
 
 import {createSlice, configureStore} from '@reduxjs/toolkit';
+import counterSlice, {SLICE_NAME} from './reducers/slice';
 
 export default configureStore({
-  reducer: {},
+  reducer: {
+    [SLICE_NAME]: counterSlice,
+  },
 });
