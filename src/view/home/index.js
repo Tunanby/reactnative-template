@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-14 17:06:18
  * @LastEditors: byz
- * @LastEditTime: 2022-08-29 15:46:59
+ * @LastEditTime: 2022-08-29 16:21:37
  */
 
 import React from 'react';
@@ -37,7 +37,7 @@ const HomeScreen = ({navigation}) => {
       {id: '2', title: '状态管理', routerName: 'store', navigation},
       {id: '3', title: '媒体：图片', routerName: 'image', navigation},
       {id: '10', title: '媒体：相机', routerName: '', navigation},
-      {id: '11', title: '媒体：相册', routerName: '', navigation},
+      {id: '11', title: '媒体：相册', routerName: 'album', navigation},
       {id: '13', title: '媒体：蓝牙', routerName: '', navigation},
       {id: '14', title: '设备：内存', routerName: '', navigation},
       {id: '15', title: '设备：拨打电话', routerName: '', navigation},

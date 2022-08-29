@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-29 15:34:56
  * @LastEditors: byz
- * @LastEditTime: 2022-08-29 16:10:40
+ * @LastEditTime: 2022-08-29 16:17:42
  */
 import React from 'react';
 import {
@@ -20,7 +20,7 @@ import {
   FlatList,
   Image,
 } from 'react-native';
-const img = require('./1.jpeg')
+const img = require('../../assets/images/1.jpeg')
 const image = () => {
   return (
     <View>
