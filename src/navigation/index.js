@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-14 12:08:50
  * @LastEditors: byz
- * @LastEditTime: 2022-08-21 16:27:08
+ * @LastEditTime: 2022-08-29 15:46:45
  */
 
 // 安装完navigation 需要重启
@@ -17,16 +17,17 @@ import NavigateScreen from '../view/navigation/navigate'; // 路由跳转
 import ParamsScreen from '../view/navigation/params'; // 路由传参
 import updateNavScreen from '../view/navigation/update'; // 动态修改导航栏信息
 // store
-import storeScreen from '../view/store/index'
+import storeScreen from '../view/store/index';
+// 媒体
+import imageScreen from '../view/media/image'; // 图片
 
 // 用户操作 事件 状态管理
-// 组件 媒体
 // 系统 文件操作 缓存 数据库 更改头部1
 // 网络 数据请求 热更新
 
 const Stack = createNativeStackNavigator();
 // 可配置一些动态化的参数
-// 可对路由进一步拆分 
+// 可对路由进一步拆分
 // 路由生命周期处理业务功能
 function RouterView({}) {
   return (
@@ -37,6 +38,7 @@ function RouterView({}) {
         <Stack.Screen name="Params" component={ParamsScreen} />
         <Stack.Screen name="updateNav" component={updateNavScreen} />
         <Stack.Screen name="store" component={storeScreen} />
+        <Stack.Screen name="image" component={imageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
