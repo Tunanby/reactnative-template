@@ -4,11 +4,10 @@
  * @Author: byz
  * @Date: 2022-08-21 16:10:17
  * @LastEditors: byz
- * @LastEditTime: 2022-08-21 17:13:16
+ * @LastEditTime: 2022-08-29 14:43:27
  */
 import {createSlice} from '@reduxjs/toolkit';
 export const SLICE_NAME = 'slice';
-// export const counterSlice = createSlice({
 const { reducer: counterSlice, actions } = createSlice({
   name: SLICE_NAME,
   initialState: {

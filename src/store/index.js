@@ -4,7 +4,7 @@
  * @Author: byz
  * @Date: 2022-08-17 22:09:36
  * @LastEditors: byz
- * @LastEditTime: 2022-08-21 16:51:20
+ * @LastEditTime: 2022-08-21 22:04:47
  */
 
 // state
@@ -19,6 +19,8 @@
 
 import {createSlice, configureStore} from '@reduxjs/toolkit';
 import counterSlice, {SLICE_NAME} from './reducers/slice';
+// 更新 state 的唯一方法是调用 store.dispatch() 并传入一个 action 对象
+// 调用 getState() 可以获取新 state。
 
 export default configureStore({
   reducer: {
